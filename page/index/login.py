@@ -1,13 +1,13 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 
-from page.basepage import Base
+from page.basepage import BasePage
 from page.index.register import Register
 
 
-class Login(Base):
+class Login(BasePage):
     def __init__(self):
-        Base.__init__(self)
+        BasePage.__init__(self)
 
     def scanf(self):
         pass
