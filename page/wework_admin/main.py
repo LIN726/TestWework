@@ -14,5 +14,6 @@ class Main(BasePage):
 
     def goto_add_member(self):
         # self.driver.find_element(By)
-        self.find(self.add_member_entrance).click()
+        self.wait_for_click(self.add_member_entrance)
+        self.click(self.add_member_entrance)
         return AddMember()
