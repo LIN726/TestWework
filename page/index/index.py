@@ -8,12 +8,11 @@ from page.index.register import Register
 
 
 class Index(BasePage):
-    def __init__(self):
-        BasePage.__init__(self)
-        self.open('https://work.weixin.qq.com/')
+    _base_url = 'https://work.weixin.qq.com/'
+
 
     def goto_login(self):
-        self.find(By.LINK_TEXT,'企业登录').click()
+        self.click(By.LINK_TEXT,'企业登录')
         return Login()
 
 

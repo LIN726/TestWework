@@ -12,4 +12,5 @@ class TestMainPage():
         self.main.goto_add_member()
 
     def teardown(self):
+        print('=====quit=====')
         self.main.quit()
